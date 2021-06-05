@@ -6,10 +6,10 @@
   "password": "postgres",
   "database": "real_estate",
   "entities": [
-    
+    "src/modules/users/entitites/*.ts"
   ],
   "migrations": [
-    "src/shared/infra/typeorm/migrations/*ts"
+    "src/shared/infra/typeorm/migrations/*.ts"
   ],
   "cli":{
     "migrationsDir": "src/shared/infra/typeorm/migrations"
