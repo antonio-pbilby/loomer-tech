@@ -17,4 +17,6 @@ realtyRoutes.get("/find/:id", realtyController.findById);
 
 realtyRoutes.get("/list", realtyController.list);
 
+realtyRoutes.delete("/delete/:id", realtyController.delete);
+
 export { realtyRoutes };

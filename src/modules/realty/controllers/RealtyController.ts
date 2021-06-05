@@ -59,4 +59,14 @@ export class RealtyContoller {
 
     return res.json(realty);
   }
+
+  async delete(req: Request, res: Response): Promise<Response> {
+    const { id } = req.params;
+
+    const realtyServices = container.resolve(RealtyServices);
+
+    await realtyServices.delete(id);
+
+    return res.send();
+  }
 }

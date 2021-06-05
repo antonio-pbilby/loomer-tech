@@ -161,3 +161,9 @@
         | id | string
         | created_at | date
         | updated_at | date
+
+* realties/delete/:id
+  * delete
+    * requer autenticação JWT
+    * retorno
+      * 200
