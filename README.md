@@ -77,6 +77,7 @@
 
 * realties/
   * post
+    * requer autenticação JWT
     * parâmetros
       * body
         | key       | value
@@ -103,6 +104,7 @@
 
 * realties/update/:id
   * put
+    * requer autenticação JWT
     * parâmetros
       * body
         | key       | value
@@ -129,8 +131,9 @@
 
 * realties/find/:id
   * get
-  * retorno
-    * 200 - json
+    * requer autenticação JWT
+    * retorno
+      * 200 - json
         | key       | value
         |-----------|--------
         | cep     | ?string
@@ -144,8 +147,9 @@
         | updated_at | date
 * realties/list
   * get
-  * retorno
-    * 200 - json (list)
+    * requer autenticação JWT
+    * retorno
+      * 200 - json (list)
         | key       | value
         |-----------|--------
         | cep     | ?string
