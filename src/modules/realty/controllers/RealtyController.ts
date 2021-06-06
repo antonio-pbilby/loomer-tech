@@ -67,6 +67,6 @@ export class RealtyContoller {
 
     await realtyServices.delete(id);
 
-    return res.send();
+    return res.status(204).send();
   }
 }
